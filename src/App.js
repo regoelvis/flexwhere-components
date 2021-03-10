@@ -44,8 +44,8 @@ function App() {
   return (
     <div className="App" style={{backgroundImage: `url('${backImg}')`, backgroundSize: 'contain' }}>
       <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
-</style> 
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+      </style>
       <Navbar />
       {features}
       <Services />
