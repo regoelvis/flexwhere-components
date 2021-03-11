@@ -13,7 +13,7 @@ function App() {
       {
         type: "row",
         img: "img.jpg",
-        title:"Feature 1, with icons and 2 lines",
+        title:"Feature 1, with icon and 2 lines",
         featureImg: desk,
         featureName: "Desk booking",
         description: "Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text",
@@ -21,7 +21,7 @@ function App() {
       },{
         type: "reverse",
         img: "img.jpg",
-        title:"Feature 1, with icons and 2 lines",
+        title:"Feature 1, with icon and 2 lines",
         featureImg: desk,
         featureName: "Desk booking",
       },

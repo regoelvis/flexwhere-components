@@ -5,6 +5,8 @@ import flwLogo from '../../assets/images/FW logo.svg'
 
 export default function NavbarMobile(){
 
+    const [windowWidth,setWindowWidth] = useState(window.innerWidth);
+
     const [locationVisible, setLocationVisible] = useState(false);
     const [location, setLocation] = useState('NL');
     const [menuVisible, setMenuVisibility] = useState(false);
@@ -34,18 +36,18 @@ export default function NavbarMobile(){
     };
 
     return (
-        <nav className="d-flex navbar navbar-light flex-justify-spacebetween">
-            { menuVisible &&
-                <div className="col-3">
+        <nav className="d-flex navbar">
+            { !menuVisible &&
+                <div className="col-xs-3">
                     <img src={flwLogo} alt="flexwhere logo" className="img-fluid flw-blue border-rounded" />
                 </div>
             }
 
-            <div className="d-flex flex-alignitems-center">
-                <div className="hamburger-menu" onClick={()=>setMenuVisibility(!menuVisible)}>
+            <div className="d-flex w-100 flex-column flex-justify-center">
+                <div className={ menuVisible === false ? "hamburger-menu flex-justify-right": "hamburger-menu flex-justify-left" } onClick={()=>setMenuVisibility(!menuVisible)}>
                     {/* Menu open and close buttons */}
                     {
-                        menuVisible &&
+                        !menuVisible &&
                         <svg width="2rem" height="2rem">
                             <rect className="border-rounded" width="2rem" height="0.2rem" y="0" />
                             <rect className="border-rounded" width="1.5rem" height="0.2rem" y="0.75rem" />
@@ -54,7 +56,7 @@ export default function NavbarMobile(){
                     }
                     
                     {
-                        !menuVisible &&
+                        menuVisible &&
                         <svg className="m2" width="1rem" height="1rem">
                             <rect className="border-rounded menu-close left" width="1rem" height="0.1rem" y="0.6rem" x="-0.55rem" />
                             <rect className="border-rounded menu-close right" width="1rem" height="0.1rem" x="0.125rem" />
@@ -62,38 +64,42 @@ export default function NavbarMobile(){
                     }
                 </div>
 
-                {!menuVisible &&
+                { (menuVisible || windowWidth>576) &&
 
-                    <div className="d-flex flex-column py-4 menu menu-blue">
+                    <div className="d-flex menu menu-blue">
 
-                        <div className="d-flex flex-column flex-alignitems-start navbar-item bold">
-                            <div className="navbar-item text-black mx-2" onClick={changeChevron}>
-                                Features
-                                <span className={`chevron ${featureChevron} blue`}></span>
-                                {  featuresVisible &&
-                                    <div> 
-                                        <ul className="">
-                                            <li className="py-1">Desk Booking</li>
-                                            <li className="py-1">Meeting room booking</li>
-                                            <li className="py-1">Statistics</li>
-                                            <li className="py-1">Covid-19</li>
-                                        </ul>
-                                    </div>
-                                }
+                        <div className="d-flex features">
+                            <div className="d-flex col-xs-9 ml-3">
+                                <button className="btn btn-primary rounded ml-3 my-3 w-100 ">Launch</button>
                             </div>
 
-                            <div className="navbar-item text-black mx-2">News & Insights</div>
-                            <div className="navbar-item text-black mx-2"> Customer Stories</div>
-                            <div className="navbar-item text-black mx-2"> Pricing</div>
-                            <div className="navbar-item text-black mx-2"> About</div>
+                            <div className="d-flex flex-column flex-alignitems-start navbar-item bold">
 
-                        </div>
-                        <div className="navbar-item">
-                            <button className="btn btn-primary rounded">Launch</button>
+                                <ul className="navbar-item text-black">
+                                    <li className="navbar-item text-black ">
+                                        <span onClick={changeChevron}>Features
+                                        <span className={`chevron ${featureChevron} blue`}></span> </span>
+                                        {  featuresVisible &&
+                                            <div> 
+                                                <ul className="">
+                                                    <li className="py-1">Desk Booking</li>
+                                                    <li className="py-1">Meeting room booking</li>
+                                                    <li className="py-1">Statistics</li>
+                                                    <li className="py-1">Covid-19</li>
+                                                </ul>
+                                            </div>
+                                        }
+                                    </li>
+                                    <li className="navbar-item text-black ">News & Insights</li>
+                                    <li className="navbar-item text-black ">Customer Stories</li>
+                                    <li className="navbar-item text-black ">Pricing</li>
+                                    <li className="navbar-item text-black ">About</li>
+                                </ul>
+                            </div>
                         </div>
                     
-                        <div>
-                            <ul className="px-3">
+                        <div className="d-flex support">
+                            <ul className="small">
                                 <li className="navbar-item"> <a href="/support">SUPPORT</a></li>
                                 <li className="navbar-item"><a href="/contact">CONTACT</a></li>
                                 <li className="navbar-item"> <a href="/login">LOGIN</a></li>
@@ -108,7 +114,7 @@ export default function NavbarMobile(){
                                                     <div className="btn" onClick={()=> {setLocation('DE'); setLocationVisible(!locationVisible)} }><a href="https://flexwhere.de">DE</a></div>
                                                     <div className="btn" onClick={()=> {setLocation('UK'); setLocationVisible(!locationVisible)} }><a href="https://flexwhere.co.uk">UK</a></div>
                                                 </div>
-                            }
+                                            }
                                     </span> 
                                 </li>
                             </ul>

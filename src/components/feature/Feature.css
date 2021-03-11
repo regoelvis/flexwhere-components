@@ -9,3 +9,23 @@
 .font-montserrat{
     font-family: Montserrat;
 }
+
+.font-montserrat.regular{
+    font-family: Montserrat;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.font-montserrat.medium{
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+.font-montserrat.bold{
+    font-weight: 600;
+}
+
+.pill{
+    padding: 0.3rem 0.75rem;
+    border-radius: 50rem ;
+}
