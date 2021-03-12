@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Feature.css'
 
 export default function Feature(props){
-    const [featureDirection, setFeatureDirection] = useState('row');
 
     const type = props.type === "row" ? "row" : "row row-reverse" ;
     return(
-        <div className={featureDirection+ " my-4 mx-2 text-left font-montserrat"}>
+        <div className={type+ " my-4 mx-2 text-left font-montserrat"}>
             <div className="col col-s-7 col-xs-12 back-blur">
                 <img className="img-fluid" src={props?.img} alt={props?.img} />
             </div>

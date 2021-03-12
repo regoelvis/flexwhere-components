@@ -15,6 +15,7 @@ export default function NavbarMobile(){
     const [featureChevron, setFeatureChevronType] = useState('chevron-bottom');
     const [locationChevron, setLocationChevronType] = useState('chevron-bottom');
 
+    //handlers for changing the chevron direction
     const changeChevron = () => {
         setFeatureChevronType((prevValue) => {
             setFeaturesVisible(!featuresVisible);
@@ -35,8 +36,12 @@ export default function NavbarMobile(){
         })
     };
 
+    //change the width of the document
+    document.onresize = ()=> setWindowWidth(()=> document.innerWidth)
+
     return (
         <nav className="d-flex navbar">
+            {/* Display logo if menu is not visible */}
             { !menuVisible &&
                 <div className="col-xs-3">
                     <img src={flwLogo} alt="flexwhere logo" className="img-fluid flw-blue border-rounded" />
