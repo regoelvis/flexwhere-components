@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/navbar/Nav-mobile'
 import Feature from './components/feature/Feature'
 import Services from './components/services/Services'
+import Footer from './components/footer/Footer'
 
 import img from './assets/images/Picture1.png'
 import desk from './assets/images/ICON_Desk booking.svg';
@@ -54,8 +55,9 @@ function App() {
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
       </style>
       <Navbar />
-      {features}
-      <Services />
+      {/* {features}
+      <Services /> */}
+      <Footer />
     </div>
   );
 }

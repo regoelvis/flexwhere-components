@@ -1,0 +1,260 @@
+{
+  "C:\\Users\\Elvis\\Desktop\\Web\\flexwhere-components\\src\\components\\services\\Service.js": {
+    "path": "C:\\Users\\Elvis\\Desktop\\Web\\flexwhere-components\\src\\components\\services\\Service.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 4
+        },
+        "end": {
+          "line": 16,
+          "column": 6
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "Service",
+        "decl": {
+          "start": {
+            "line": 3,
+            "column": 24
+          },
+          "end": {
+            "line": 3,
+            "column": 31
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 38
+          },
+          "end": {
+            "line": 17,
+            "column": 1
+          }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 8
+    },
+    "f": {
+      "0": 8
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "494ab7768be498248c12082dea0b3a76520f4a02"
+  },
+  "C:\\Users\\Elvis\\Desktop\\Web\\flexwhere-components\\src\\components\\services\\Services.js": {
+    "path": "C:\\Users\\Elvis\\Desktop\\Web\\flexwhere-components\\src\\components\\services\\Services.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 9,
+          "column": 17
+        },
+        "end": {
+          "line": 28,
+          "column": 7
+        }
+      },
+      "1": {
+        "start": {
+          "line": 30,
+          "column": 23
+        },
+        "end": {
+          "line": 30,
+          "column": 140
+        }
+      },
+      "2": {
+        "start": {
+          "line": 30,
+          "column": 53
+        },
+        "end": {
+          "line": 30,
+          "column": 138
+        }
+      },
+      "3": {
+        "start": {
+          "line": 31,
+          "column": 4
+        },
+        "end": {
+          "line": 45,
+          "column": 6
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "Services",
+        "decl": {
+          "start": {
+            "line": 8,
+            "column": 24
+          },
+          "end": {
+            "line": 8,
+            "column": 32
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 34
+          },
+          "end": {
+            "line": 46,
+            "column": 1
+          }
+        },
+        "line": 8
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 30,
+            "column": 41
+          },
+          "end": {
+            "line": 30,
+            "column": 42
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 53
+          },
+          "end": {
+            "line": 30,
+            "column": 138
+          }
+        },
+        "line": 30
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 4,
+      "1": 4,
+      "2": 12,
+      "3": 4
+    },
+    "f": {
+      "0": 4,
+      "1": 12
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "2066b2a0565b7dd75a88eebf5e8d3354929c0641"
+  },
+  "C:\\Users\\Elvis\\Desktop\\Web\\flexwhere-components\\cypress\\components\\card.spec.js": {
+    "path": "C:\\Users\\Elvis\\Desktop\\Web\\flexwhere-components\\cypress\\components\\card.spec.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 4
+        }
+      },
+      "1": {
+        "start": {
+          "line": 8,
+          "column": 4
+        },
+        "end": {
+          "line": 11,
+          "column": 6
+        }
+      },
+      "2": {
+        "start": {
+          "line": 9,
+          "column": 6
+        },
+        "end": {
+          "line": 9,
+          "column": 26
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 32
+          },
+          "end": {
+            "line": 7,
+            "column": 33
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 38
+          },
+          "end": {
+            "line": 12,
+            "column": 3
+          }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 8,
+            "column": 15
+          },
+          "end": {
+            "line": 8,
+            "column": 16
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 21
+          },
+          "end": {
+            "line": 11,
+            "column": 5
+          }
+        },
+        "line": 8
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 2,
+      "1": 2,
+      "2": 2
+    },
+    "f": {
+      "0": 2,
+      "1": 2
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "dad36011b3b78a3bc758f91b115ba890d6f2b9fb"
+  }
+}

@@ -1,0 +1,68 @@
+footer{
+    font-size: 14px;
+    text-align: left;
+    background: linear-gradient(-8deg, #000 95%, rgba(0,0,0,0) 5%) ;
+    padding: 1rem;
+    color: #f3f3f3 !important;
+    font-weight: 300;
+}
+
+footer span {
+    margin: 0.5rem 0.25rem;
+}
+
+footer > div div {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.logo {
+    display: none;
+}
+
+.links{
+    flex-direction: column;
+}
+
+.social > * {
+    margin-right: 3rem;
+}
+
+.apps{
+    flex-direction: column;
+}
+
+.standards *{
+    margin-right: 2.2rem;
+}
+
+.privacy {
+    flex-wrap: wrap;
+    width: 78%;
+}
+
+
+@media(min-width:579px){
+    .logo{
+        display: block;
+    }
+    .links{
+        flex-direction: row;
+    }
+    footer{
+        background: linear-gradient(-8deg, #000 95%, rgba(0,0,0,0) 5%) ;
+    }
+}
+
+.white{
+    color: white;
+}
+
+.font-weight-feature{
+    font-weight: 400;
+}
+
+.f3f3f3{
+    color: #f3f3f3;
+}
+
