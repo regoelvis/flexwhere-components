@@ -1,8 +1,9 @@
 footer{
+    display: flex;
     font-size: 14px;
     text-align: left;
     background: linear-gradient(-8deg, #000 95%, rgba(0,0,0,0) 5%) ;
-    padding: 1rem;
+    padding: 2rem 1rem 0rem 1rem;
     color: #f3f3f3 !important;
     font-weight: 300;
 }
@@ -11,9 +12,15 @@ footer span {
     margin: 0.5rem 0.25rem;
 }
 
-footer > div div {
+footer > div > div {
     display: flex;
     margin: 1rem 0;
+}
+
+.footer-row-1, .footer-row-2, .footer-row-3{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 
 .logo {
@@ -22,6 +29,12 @@ footer > div div {
 
 .links{
     flex-direction: column;
+    width: 75%;
+    justify-content: space-evenly;
+}
+
+.links > * {
+    margin: 1rem 0;
 }
 
 .social > * {
@@ -29,16 +42,34 @@ footer > div div {
 }
 
 .apps{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.apps-standards{
     flex-direction: column;
 }
 
-.standards *{
+.icon {
+    width: 10rem;
+}
+
+.standards > img{
     margin-right: 2.2rem;
+    margin-top: 1rem;
 }
 
 .privacy {
     flex-wrap: wrap;
     width: 78%;
+    align-items: center;
+}
+.privacy span {
+    margin:0;
+}
+.privacy .dash{
+    margin: 0 0.5rem;
 }
 
 
@@ -49,9 +80,47 @@ footer > div div {
     .links{
         flex-direction: row;
     }
-    footer{
-        background: linear-gradient(-8deg, #000 95%, rgba(0,0,0,0) 5%) ;
+    .links > * {
+        margin: 0;
     }
+    footer{
+        padding-top: 5rem;
+        background: linear-gradient(-3deg, #000 90%, #0000 10%) ;
+    }
+    footer > div div {
+        display: flex;
+        margin: 0 0;
+    }
+
+    footer > div > div {
+        width:100%;
+    }
+    .apps{
+        flex-direction: row;
+        margin-top: 1.35rem;
+        margin-bottom: 0;
+    }
+
+    .standards{
+        justify-content: flex-end;
+    }
+    .standards > img{
+        margin-top: 0rem;
+    }
+
+    .footer-row-1, .footer-row-3{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-row-2{
+        flex-direction: column;
+    }
+
+    .apps-standards{
+        flex-direction: column-reverse;
+    }
+    
 }
 
 .white{

@@ -55,8 +55,8 @@ function App() {
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
       </style>
       <Navbar />
-      {/* {features}
-      <Services /> */}
+      {features}
+      <Services />
       <Footer />
     </div>
   );
