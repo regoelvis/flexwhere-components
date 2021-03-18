@@ -4,7 +4,7 @@ import Story from '../../src/components/customerstory/Story';
 import '../../src/App.css'
 
 describe('Unit Component test for the Story Component', () => {
-    it('Fully fnctional component with all data', () => {
+    it('Fully functional component with all data', () => {
         mount( 
           <Story title="“The use of FlexWhere provides us with extra square meters of workspace”" company="P. Persoon, Gemeente Deventer" moreText="Read more customers stories" />
         )

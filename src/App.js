@@ -52,9 +52,6 @@ function App() {
    */
   return (
     <div className="App" style={{backgroundImage: `url('${ window.innerWidth<578? backImgMobile : backImgDesktop}')`, backgroundSize: 'cover' }}>
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
-      </style>
       <Navbar />
       {features}
       <Story title="“The use of FlexWhere provides us with extra square meters of workspace”" company="P. Persoon, Gemeente Deventer" moreText="Read more customers stories" />
