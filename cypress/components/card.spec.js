@@ -5,8 +5,7 @@ import '../../src/components/services/Services.css'
 import '../../src/App.css'
 
 describe('Test card component', () => {
-    it('test', () => {
+    it('Test the service with no data', () => {
       mount( <Service /> )
-
-    })
+    });
   })
