@@ -21,8 +21,8 @@
 * Colors 
 */
 .flw-blue{
-  color: #1382c5;
-  background-color: #1382c5;
+  color: #5082bf;
+  background-color: #5082bf;
 }
 
 .text-black{
@@ -41,6 +41,10 @@
 }
 .text-right{
   text-align: right;
+}
+
+.font-weight-300{
+  font-weight: 300;
 }
 
 .font-weight-low{
@@ -280,12 +284,16 @@
   border-radius: 0.75rem;
 }
 
+.border-pill{
+  border-radius: 50rem;
+}
+
 .btn{
   padding: 0.5rem;
 }
 
 .btn-primary{
-  background-color: #1382c5;
+  background-color: #5082bf;
 }
 
 *,*::after, *::before {
@@ -312,6 +320,9 @@
 
 .col-3{
   flex: 0 24.99%;
+}
+.col-4{
+  flex: 0 0 33%;
 }
 
 .col-5{

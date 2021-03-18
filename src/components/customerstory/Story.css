@@ -1,0 +1,43 @@
+.story{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #5082bf;
+    color: #fff;
+    clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%);
+}
+
+.story-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.companyLogo{
+    width: 15%;
+}
+
+.btn.border-white{
+    border: 1px solid #fff;
+}
+
+
+@media (min-width:579px){
+    .story{
+        flex-direction: row;
+        clip-path: polygon(0% 0%, 100% 20%, 100% 80%, 0% 100%);
+    }
+
+    .more{
+        border-left: 2px solid #000;
+    }
+    
+}

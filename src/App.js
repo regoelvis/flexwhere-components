@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/navbar/Nav-mobile'
 import Feature from './components/feature/Feature'
+import Story from './components/customerstory/Story'
 import Services from './components/services/Services'
 import Footer from './components/footer/Footer'
 
@@ -56,6 +57,7 @@ function App() {
       </style>
       <Navbar />
       {features}
+      <Story title="“The use of FlexWhere provides us with extra square meters of workspace”" company="P. Persoon, Gemeente Deventer" moreText="Read more customers stories" />
       <Services />
       <Footer />
     </div>

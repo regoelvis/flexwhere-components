@@ -32,7 +32,7 @@ export default function Services(){
 
         <div className="d-flex flex-column back-gradient">
             <div className="d-flex flex-justify-center">
-                <p className="font-size-large">
+                <p className="mx-2 font-size-large">
                     <span className="font-weight-medium">{data.title.split(" ")[0]} </span> 
                     {data.title.substr(5,20)}
                 </p>

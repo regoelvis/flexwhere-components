@@ -113,6 +113,7 @@ button.rounded{
 @media (min-width:576px){
     .navbar{
         padding: 1.5rem 1.5rem;
+        box-shadow: none ;
     }
     .features{
         flex-direction: row-reverse;
