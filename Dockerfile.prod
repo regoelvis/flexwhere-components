@@ -1,0 +1,19 @@
+FROM node:14-buster-slim as builder
+
+WORKDIR /home/flw
+
+#Copy all files in src, public and package.json
+COPY public /home/flw/public
+COPY src /home/flw/src/
+COPY package.json /home/flw
+
+#download and install dependencies and then build
+RUN npm install --production
+RUN npm run build
+
+#Setup
+
+FROM nginx:alpine
+
+#Copy the built html and assets from builder image to nginx image
+COPY --from=builder /home/flw/build/ /usr/share/nginx/html
