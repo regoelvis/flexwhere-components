@@ -313,114 +313,35 @@
   flex: 1 0 0%;
   box-sizing: border-box;
 }
-
 .col-2 {
   flex: 0 16.6667%;
 }
-
 .col-3{
   flex: 0 24.99%;
 }
 .col-4{
   flex: 0 0 33%;
 }
-
 .col-5{
   flex: 0 41%;
 }
-
 .col-6 {
   flex: 0 50%;
 }
-
 .col-7{
   flex: 0 58.33%;
 }
-
 .col-9{
   flex: 0 75%;
 }
-
 .col-10 {
   flex: 0 83.33%;
 }
-
 .col-12 {
   flex: 0 100%;
 }
 
-@media (max-width:1400px){
-  .col-xl-2{
-      flex: 0 16.6667%
-  }
-  .col-xl-6 {
-      flex: 0 50%
-  }
-  .col-xl-10 {
-      flex: 0 83.33%
-  }
-  .col-xl-12{
-      flex: 0 100%
-  }
-
-}
-
-@media (max-width:1200px){
-  .col-l-2{
-      flex: 0 16.6667%
-  }
-  .col-l-6 {
-      flex: 0 50%
-  }
-  .col-l-10 {
-      flex: 0 83.33%
-  }
-  .col-l-12{
-      flex: 0 100%
-  }
-
-}
-
-@media (max-width:992px){
-  .col-md-2{
-      flex: 0 16.6667%
-  }
-  .col-md-6 {
-      flex: 0 50%
-  }
-  .col-md-10 {
-      flex: 0 83.33%
-  }
-  .col-md-12{
-      flex: 0 100%
-  }
-
-}
-
-@media (max-width:768px){
-  .col-s-2{
-      flex: 0 16.6667%
-  }
-  .col-s-5{
-    flex: 0 41.666%
-  }
-  .col-s-6 {
-      flex: 0 50%
-  }
-  .col-s-7{
-    flex:0 58.333%;
-  }
-  .col-s-10 {
-      flex: 0 83.33%
-  }
-  .col-s-12{
-      flex: 0 100%
-  }
-
-}
-
-@media (max-width:576px){
-
+@media (min-width:576px){
   .col-xs-2{
       flex: 0 16.6667%
   }
@@ -442,5 +363,84 @@
   .col-xs-12{
       flex: 0 100%
   }
+}
 
+@media (min-width:768px){
+  .col-s-2{
+      flex: 0 16.6667%
+  }
+  .col-s-3{
+    flex: 0 25%;
+  }
+  .col-s-5{
+    flex: 0 41.666%
+  }
+  .col-s-6 {
+      flex: 0 50%
+  }
+  .col-s-7{
+    flex:0 58.333%;
+  }
+  .col-s-10 {
+      flex: 0 83.33%
+  }
+  .col-s-12{
+      flex: 0 100%
+  }
+
+}
+
+
+@media (min-width:992px){
+  .col-md-1{
+    flex: 0 0 8.333%;
+  }
+  .col-md-2{
+      flex: 0 16.6667%
+  }
+  .col-md-5{
+    flex: 0 41.666%
+  }
+  .col-md-6 {
+      flex: 0 50%
+  }
+  .col-md-10 {
+      flex: 0 83.33%
+  }
+  .col-md-12{
+      flex: 0 100%
+  }
+
+}
+
+
+@media (min-width:1200px){
+  .col-l-2{
+      flex: 0 16.6667%
+  }
+  .col-l-6 {
+      flex: 0 50%
+  }
+  .col-l-10 {
+      flex: 0 83.33%
+  }
+  .col-l-12{
+      flex: 0 100%
+  }
+
+}
+
+@media (min-width:1400px){
+  .col-xl-2{
+      flex: 0 16.6667%
+  }
+  .col-xl-6 {
+      flex: 0 50%
+  }
+  .col-xl-10 {
+      flex: 0 83.33%
+  }
+  .col-xl-12{
+      flex: 0 100%
+  }
 }

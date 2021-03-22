@@ -4,7 +4,7 @@ import img from '../assets/images/Picture1.png'
 
 //story images
 import man from '../assets/images/mask-group-44.png'
-import logo from '../assets/images/Topdesk.png'
+import logo from '../assets/images/logo.svg'
 
 //mock data for the features  
 export const featureData = {

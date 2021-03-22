@@ -5,6 +5,7 @@
     right: 0;
     width: 80%;
     height: 100%;
+    z-index: 1;
 }
 
 @media(min-width: 576px){
@@ -75,7 +76,7 @@ button.rounded{
 
 .navbar{
     padding: 1rem 1.5rem;
-    box-shadow:0 3px 6px rgba(0,0,0,0.16) ;
+    box-shadow:0 3px 6px rgba(0,0,0,0.16);
 }
 
 .navbar-item{

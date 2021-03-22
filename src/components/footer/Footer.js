@@ -64,8 +64,10 @@ function Footer(){
                         </div>
 
                         <div className="standards">
-                            <img src={iso} alt="iso"></img>
-                            <img src={iso} alt="iso"></img>
+                            <div className="col-s-3">
+                                <img src={iso} alt="iso"></img>
+                                <img src={iso} alt="iso"></img>    
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -80,8 +82,9 @@ function Footer(){
                         <span>FlexWhere 2021</span>
                     </div>
 
-                    <img className="icon" src={dv} alt="dv Logo"></img>
-
+                    <div className="col-s-3 icon">
+                        <img src={dv} alt="dv Logo"></img>
+                    </div>
                 </div>
 
             </div>

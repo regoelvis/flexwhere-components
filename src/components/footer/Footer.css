@@ -55,7 +55,7 @@ footer > div > div {
     width: 10rem;
 }
 
-.standards > img{
+.standards img{
     margin-right: 2.2rem;
     margin-top: 1rem;
 }
@@ -92,6 +92,10 @@ footer > div > div {
         margin: 0 0;
     }
 
+    .icon{
+        padding-left: 3rem;
+    }
+
     footer > div > div {
         width:100%;
     }
@@ -103,9 +107,12 @@ footer > div > div {
 
     .standards{
         justify-content: flex-end;
+        padding-left: 5rem;
     }
-    .standards > img{
+    .standards img{
         margin-top: 0rem;
+        margin-left: 2rem;
+        margin-right: 0rem;
     }
 
     .footer-row-1, .footer-row-3{

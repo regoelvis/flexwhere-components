@@ -25,6 +25,7 @@
 }
 
 .pill{
-    padding: 0.3rem 0.75rem;
+    padding: 0.5rem 1rem;
     border-radius: 50rem ;
+    border: none;
 }

@@ -6,7 +6,7 @@ export default function Feature(props){
     const type = props.type === "row" ? "row" : "row row-reverse" ;
     return(
         <div className={type+ " my-4 mx-2 text-left font-montserrat"}>
-            <div className="col col-s-7 col-xs-12 back-blur">
+            <div className="col col-12 col-s-7 col-xs-12 back-blur">
                 <img className="img-fluid" src={props?.img} alt={props?.img} />
             </div>
 

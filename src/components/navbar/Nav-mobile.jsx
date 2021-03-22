@@ -43,7 +43,7 @@ export default function NavbarMobile(){
         <nav className="d-flex navbar">
             {/* Display logo if menu is not visible */}
             { !menuVisible &&
-                <div className="col-xs-3">
+                <div className="col-3 col-md-1">
                     <img src={flwLogo} alt="flexwhere logo" className="img-fluid flw-blue border-rounded" />
                 </div>
             }
@@ -74,7 +74,7 @@ export default function NavbarMobile(){
                     <div className="d-flex menu menu-blue">
 
                         <div className="d-flex features">
-                            <div className="d-flex col-xs-9 ml-3">
+                            <div className="d-flex ml-3">
                                 <button className="btn btn-primary rounded ml-3 my-3 w-100 ">Launch</button>
                             </div>
 
