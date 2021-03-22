@@ -93,7 +93,12 @@ footer > div > div {
     }
 
     .icon{
+        padding-left: 1rem;
+    }
+
+    .logo{
         padding-left: 3rem;
+        margin-bottom: 0.75rem;
     }
 
     footer > div > div {

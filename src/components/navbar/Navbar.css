@@ -16,6 +16,7 @@
         right: 0;
         width: 80%;
         height: 100%;
+        justify-content: flex-end;
     }
 }
 
@@ -25,7 +26,7 @@
 
 nav ul{
     list-style-type: none;
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 0 0 1.5rem;
     margin : 0.25rem 0;
 }
@@ -35,7 +36,7 @@ nav li{
 }
 
 nav .small{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .support > * {
@@ -86,9 +87,9 @@ button.rounded{
 }
 
 .navbar button{
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
-    padding: 0.5rem 2.5rem;
+    padding: 0.75rem 3.75rem;
 }
 
 @media (max-width:578px){
@@ -113,13 +114,21 @@ button.rounded{
 
 @media (min-width:579px){
     .navbar{
-        padding: 1.5rem 1.5rem;
+        padding: 0.6rem 2.5rem;
         box-shadow: none ;
     }
-
     .navbody{
         width: 100%;
     }
+
+    nav li{
+        margin: 0.25rem 0.75rem;
+    }
+
+    .support > * {
+        margin: 0.25rem 0;
+    }
+
     .features{
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -127,8 +136,13 @@ button.rounded{
     }
 
     .features button{
-        margin: 1rem 1rem;
+        margin: 0.25rem 1rem;
     }
+
+    .navbar button{
+        margin: 0.75rem 0rem;
+    }
+
 }
 
 .navbar-light{

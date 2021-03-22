@@ -82,7 +82,7 @@ function Footer(){
                         <span>FlexWhere 2021</span>
                     </div>
 
-                    <div className="col-s-3 icon">
+                    <div className="col-s-3 logo">
                         <img src={dv} alt="dv Logo"></img>
                     </div>
                 </div>

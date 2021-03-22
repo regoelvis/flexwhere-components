@@ -75,7 +75,7 @@ export default function NavbarMobile(){
 
                         <div className="d-flex features">
                             <div className="d-flex ml-3">
-                                <button className="btn btn-primary rounded ml-3 my-3 w-100 ">Launch</button>
+                                <button className="btn btn-primary rounded">Launch</button>
                             </div>
 
                             <div className="d-flex flex-column flex-alignitems-start navbar-item bold">
