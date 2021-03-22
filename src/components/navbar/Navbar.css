@@ -110,10 +110,14 @@ button.rounded{
     }
 }
 
-@media (min-width:576px){
+@media (min-width:579px){
     .navbar{
         padding: 1.5rem 1.5rem;
         box-shadow: none ;
+    }
+
+    .navbody{
+        width: 100%;
     }
     .features{
         flex-direction: row-reverse;
@@ -211,7 +215,3 @@ button.rounded{
         display: none;
     }
 }
-
-/*
-* Media Queries
-*/

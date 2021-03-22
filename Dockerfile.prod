@@ -12,7 +12,6 @@ RUN npm install --production
 RUN npm run build
 
 #Setup
-
 FROM nginx:alpine
 
 #Copy the built html and assets from builder image to nginx image

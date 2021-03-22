@@ -48,7 +48,7 @@ export default function NavbarMobile(){
                 </div>
             }
 
-            <div className="d-flex w-100 flex-column flex-justify-center">
+            <div className="d-flex navbody flex-column flex-justify-center">
                 <div className={ menuVisible === false ? "hamburger-menu flex-justify-right": "hamburger-menu flex-justify-left" } onClick={()=>setMenuVisibility(!menuVisible)}>
                     {/* Menu open and close buttons */}
                     {
