@@ -3,9 +3,10 @@ import './Feature.css'
 
 export default function Feature(props){
 
-    const type = props.type === "row" ? "row" : "row row-reverse" ;
+    const type = ( window.innerWidth >= 578) ? props.type : "";
     return(
-        <div className={type+ " my-4 mx-2 text-left font-montserrat"}>
+        <div className={type+ " flw-feature text-left font-montserrat"}>
+
             <div className="col col-12 col-s-7 col-xs-12 back-blur">
                 <img className="img-fluid" src={props?.img} alt={props?.img} />
             </div>
@@ -32,10 +33,10 @@ export default function Feature(props){
                         <div>
                             <button className="btn-primary pill text-white">Read More</button>
                         </div>
-
                     }
                 </div>
             </div>
+
         </div>
     );
 }
