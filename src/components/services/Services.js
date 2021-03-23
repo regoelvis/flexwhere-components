@@ -29,8 +29,7 @@ export default function Services(){
 
       const services = data.services.map((service)=> <Service img={service.img} title={service.title} description={service.description} /> )
     return (
-
-        <div className="d-flex flex-column back-gradient">
+        <div className="d-flex flex-column" >
             <div className="d-flex flex-justify-center">
                 <p className="mx-2 font-size-large">
                     <span className="font-weight-medium">{data.title.split(" ")[0]} </span> 
@@ -38,8 +37,14 @@ export default function Services(){
                 </p>
             </div>
         
-            <div className="d-flex row flex-justify-center m1 flex-wrap">
-                {services }
+            <div className="d-flex flex-column flex-alignitems-center">
+              <div className="d-flex row flex-justify-center m1 flex-wrap">
+                  {services }
+              </div>
+
+              <div className="more-blogs">
+                <button className="btn border-blue pill text-blue transparent">Next blog</button>
+              </div>
             </div>
       </div>
     );

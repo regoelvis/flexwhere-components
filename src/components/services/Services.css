@@ -17,3 +17,19 @@
 .bg-white{
     background-color: #fff;
 }
+
+.btn.border-blue{
+    border: 1px solid #5d8dc5;
+}
+
+.more-blogs{
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+}
+
+@media (min-width:578px){
+    .more-blogs{
+        width: 50%;
+    }
+}

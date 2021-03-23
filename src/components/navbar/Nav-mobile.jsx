@@ -81,12 +81,13 @@ export default function NavbarMobile(){
                             <div className="d-flex flex-column flex-alignitems-start navbar-item bold">
 
                                 <ul className="navbar-item text-black">
-                                    <li className="navbar-item text-black ">
+                                    <li className="navbar-item text-black feature">
                                         <span onClick={changeChevron}>Features
-                                        <span className={`chevron ${featureChevron} blue`}></span> </span>
+                                            <span className={`chevron ${featureChevron} blue`}></span> 
+                                        </span>
                                         {  featuresVisible &&
                                             <div> 
-                                                <ul className="">
+                                                <ul>
                                                     <li className="py-1">Desk Booking</li>
                                                     <li className="py-1">Meeting room booking</li>
                                                     <li className="py-1">Statistics</li>

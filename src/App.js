@@ -11,7 +11,7 @@ import backImgDesktop from './assets/images/Mask.png'
 
 import {featureData, storyData} from '../src/resources/values'
 
-function App() {
+function App(){
 
   const features = featureData.data.map(feature => <Feature type={feature?.type} img={feature?.img} title={feature?.title} featureImg={feature?.featureImg} featureName={feature?.featureName} description={feature?.description} more={feature?.more} />)
 

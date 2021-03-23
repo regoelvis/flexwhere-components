@@ -34,6 +34,7 @@ export const featureData = {
         type: "reverse",
         img: img,
         featureName: "The use of FlexWhere provides us with extra square meters of workspace",
+        description: "Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text",
       }
     ]
   }

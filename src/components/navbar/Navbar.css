@@ -65,7 +65,6 @@ button.rounded{
     display:block;
     position: fixed;
     background-color: #fff;
-    border:1px solid black;
     padding: 0.25rem;
 }
 
@@ -73,7 +72,6 @@ button.rounded{
     background-color: #868889;
     color: #fff;
 }
-
 
 .navbar{
     padding: 1rem 1.5rem;
@@ -90,6 +88,7 @@ button.rounded{
     font-size: 16px;
     color: #fff;
     padding: 0.75rem 3.75rem;
+    margin: 2.5rem 0 1.75rem 0;
 }
 
 @media (max-width:578px){
@@ -129,6 +128,17 @@ button.rounded{
         margin: 0.25rem 0;
     }
 
+    .dropdown-menu{
+        background-color: #eef4fa ;
+        border: 1px dotted #ccc;
+        position: absolute;
+        right: 0;
+    }
+
+    .dropdown-menu > *{
+        padding: 0.5rem 1.5rem;
+    }
+
     .features{
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -137,6 +147,22 @@ button.rounded{
 
     .features button{
         margin: 0.25rem 1rem;
+    }
+    .feature div{
+        position: absolute;
+        margin-top: 0.5rem;
+    }
+
+    .feature ul{
+        display: flex;
+    }
+
+    .feature li:hover{
+        margin: 0 0.5rem;
+        padding: 0.5rem 1.5rem;
+        color: #fff;
+        background-color: #868889;
+        border-radius: 0.25rem;
     }
 
     .navbar button{
@@ -196,6 +222,12 @@ button.rounded{
 
 .hamburger-menu{
     display:flex;
+}
+
+@media (min-width: 578px){
+    .hamburger-menu{
+        display: none;
+    }
 }
 
 @media (min-width:768px){
