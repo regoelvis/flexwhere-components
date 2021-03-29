@@ -157,11 +157,14 @@ button.rounded{
         display: flex;
     }
 
-    .feature li:hover{
+    .feature li{
         margin: 0 0.5rem;
-        padding: 0.5rem 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .feature li:hover{
         color: #fff;
-        background-color: #868889;
+        background-color: var(--flw-blue);
         border-radius: 0.25rem;
     }
 

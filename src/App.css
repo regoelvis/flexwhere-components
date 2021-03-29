@@ -24,6 +24,10 @@ a{
 /*
 * Colors 
 */
+:root{
+  --flw-blue : #5082bf;
+}
+
 .flw-blue{
   color: #5082bf;
   background-color: #5082bf;

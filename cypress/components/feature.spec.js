@@ -22,7 +22,10 @@ describe('Tests for Feature component', () => {
          description={data.description} more={data.more} />);
     })
 
-    it('Will all undefined/null')
+    it('Will mount with all undefined/null', () => {
+        mount(<Feature type="row" img={undefined} title={undefined} featureImg={undefined} featureName={undefined}
+        description={undefined} more={undefined} />)
+    })
 
     it('Test will all invalid data', () => {
         mount(<Feature />);

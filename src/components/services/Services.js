@@ -5,24 +5,30 @@ import privacyIcon from '../../assets/images/ICON_eye.svg'
 import securityIcon from '../../assets/images/ICON_security.svg'
 import softwareIcon from '../../assets/images/ICON_software.svg'
 
+import { useTranslation } from 'react-i18next'
+
 export default function Services(){
+  const [ t ] = useTranslation();
+
+  // i18n.changeLanguage('en')
+
     const data = {
-        title : "What you can expect of us",
+        title : t('services.title'),
         services : [
           {
             img : privacyIcon,
-            title : "Privacy",
-            description : "Privacy is important to us. That is why we make our software with privacy in mind."
+            title : t("services.privacy"),
+            description : t('services.privacyDescription')
           },
           {
             img : securityIcon,
-            title : "Security",
-            description : "We maintain security at the highest level with our own security expert."
+            title : t("services.security"),
+            description : t("services.securityDescription")
           },
           {
             img : softwareIcon,
-            title : "Software-only",
-            description : "Our software is made for convenience and works without additional hardware."
+            title : t("services.softwareOnly"),
+            description : t('services.softwareDescription')
           }
         ]
       }

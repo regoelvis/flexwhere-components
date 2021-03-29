@@ -19,12 +19,12 @@ export default function Feature(props){
                     <div className="row flex-alignitems-center">
                         {
                             props?.featureImg &&
-                            <div className="col-1">
+                            <div className="col-1 mx-1">
                                 <img className="img-fluid" src={props?.featureImg} alt={props?.featureImg} />
                             </div>
                         }
     
-                        <span className="font-montserrat medium mx-1">{props?.featureName}</span>
+                        <span className="font-montserrat medium">{props?.featureName}</span>
                     </div>
                     <p className="font-montserrat regular">{props?.description}</p>
 

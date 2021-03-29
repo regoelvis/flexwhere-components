@@ -2,8 +2,11 @@ import React, {useState} from 'react'
 import './Navbar.css'
 
 import flwLogo from '../../assets/images/FW logo.svg'
+import { useTranslation } from 'react-i18next';
 
-export default function NavbarMobile(){
+export default function NavbarMobile(props){
+
+    const {t} = useTranslation();
 
     const [windowWidth,setWindowWidth] = useState(window.innerWidth);
 
@@ -37,7 +40,7 @@ export default function NavbarMobile(){
     };
 
     //change the width of the document
-    document.onresize = ()=> setWindowWidth(()=> document.innerWidth)
+    document.onresize = ()=> setWindowWidth(document.innerWidth)
 
     return (
         <nav className="d-flex navbar">
@@ -75,14 +78,14 @@ export default function NavbarMobile(){
 
                         <div className="d-flex features">
                             <div className="d-flex ml-3">
-                                <button className="btn btn-primary rounded">Launch</button>
+                                <button className="btn btn-primary rounded"> {t('navbar.launch')} </button>
                             </div>
 
                             <div className="d-flex flex-column flex-alignitems-start navbar-item bold">
 
                                 <ul className="navbar-item text-black">
                                     <li className="navbar-item text-black feature">
-                                        <span onClick={changeChevron}>Features
+                                        <span onClick={changeChevron}> {t('navbar.features')}
                                             <span className={`chevron ${featureChevron} blue`}></span> 
                                         </span>
                                         {  featuresVisible &&
@@ -96,19 +99,19 @@ export default function NavbarMobile(){
                                             </div>
                                         }
                                     </li>
-                                    <li className="navbar-item text-black ">News & Insights</li>
-                                    <li className="navbar-item text-black ">Customer Stories</li>
-                                    <li className="navbar-item text-black ">Pricing</li>
-                                    <li className="navbar-item text-black ">About</li>
+                                    <li className="navbar-item text-black ">{t('navbar.newsInsights')}</li>
+                                    <li className="navbar-item text-black ">{t('navbar.customerStories')}</li>
+                                    <li className="navbar-item text-black ">{t('navbar.pricing')}</li>
+                                    <li className="navbar-item text-black ">{t('navbar.about')} </li>
                                 </ul>
                             </div>
                         </div>
                     
                         <div className="d-flex support">
                             <ul className="small">
-                                <li className="navbar-item"> <a href="/support">SUPPORT</a></li>
-                                <li className="navbar-item"><a href="/contact">CONTACT</a></li>
-                                <li className="navbar-item"> <a href="/login">LOGIN</a></li>
+                                <li className="navbar-item"> <a href="/support">{t('navbar.support')}</a></li>
+                                <li className="navbar-item"><a href="/contact">{t('navbar.contact')}</a></li>
+                                <li className="navbar-item"> <a href="/login">{t('navbar.login')}</a></li>
                                 <li className="navbar-item"> 
                                     <span onClick={changeLocationChevron}>{location}
                                         <span className={`chevron ${locationChevron}`}></span>
@@ -116,9 +119,9 @@ export default function NavbarMobile(){
                                                 locationVisible && 
                                 
                                                 <div className="dropdown-menu">
-                                                    <div className="btn" onClick={()=> {setLocation('NL'); setLocationVisible(!locationVisible)} } ><a href="https://flexwhere.nl">NL</a></div>
-                                                    <div className="btn" onClick={()=> {setLocation('DE'); setLocationVisible(!locationVisible)} }><a href="https://flexwhere.de">DE</a></div>
-                                                    <div className="btn" onClick={()=> {setLocation('UK'); setLocationVisible(!locationVisible)} }><a href="https://flexwhere.co.uk">UK</a></div>
+                                                    <div className="btn" onClick={()=> {setLocation('NL'); setLocationVisible(!locationVisible); props.languageHandler('nl')} } ><a href="#https://flexwhere.nl">NL</a></div>
+                                                    <div className="btn" onClick={()=> {setLocation('DE'); setLocationVisible(!locationVisible); props.languageHandler('de')} }><a href="#https://flexwhere.de">DE</a></div>
+                                                    <div className="btn" onClick={()=> {setLocation('UK'); setLocationVisible(!locationVisible); props.languageHandler('uk')} }><a href="#https://flexwhere.co.uk">UK</a></div>
                                                 </div>
                                             }
                                     </span> 
