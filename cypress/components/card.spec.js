@@ -1,12 +1,14 @@
 import React from 'react'
 import {mount} from '@cypress/react'
 import Service from '../../src/components/services/Service'
+import {useTranslation} from 'react-i18next';
 import '../../src/components/services/Services.css'
 import '../../src/App.css'
 
 import desk from '../../src/assets/images/ICON_Desk booking_2.svg'
 
 describe('Test card component', () => {
+  const {t} = useTranslation();
   const data = {
     img: desk,
     title: "Software",

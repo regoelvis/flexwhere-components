@@ -29,7 +29,7 @@ function Footer(){
                             <span className="white font-weight-feature">{t('footer.sitemap')}</span>
                             <span>{t('footer.features')}</span>
                             <span>{t('footer.newsInsights')}</span>
-                            <span> {t('footer.tools')}</span>
+                            <span> {t('footer.customerStories')}</span>
                             <span>{t('footer.prices')}</span>
                             <span>{t('footer.aboutUs')}</span>
                         </div>
@@ -47,6 +47,7 @@ function Footer(){
                             <span>+44 (0)20 38681867</span>
                             <span>{t('footer.supportFlw')}</span>
                             <span>{t('footer.businessDays')}</span>
+                            <span>{t('footer.supportFlwSite')}</span>
                         </div>
                     </div>
 

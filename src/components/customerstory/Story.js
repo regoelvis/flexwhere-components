@@ -10,14 +10,16 @@ function Story(props){
 
                     { props.data?.img &&
                         <div className="image w-100">
-                            <img src={props.data?.img} alt="portrait"></img>
+                            <div>
+                                { props.data?.img.map( imgSource => <img src={imgSource} alt="portrait"></img> ) }
+                            </div>
                         </div>
                     }
 
                     <div className="story-details flex-column w-100">
-                        { props.data?.logo && <img src={props.data?.logo} className="companyLogo" alt="logo"></img> }
+                        { props.data?.logo && <img src={props.data?.logo} className="companyLogo img-fluid" alt="logo"></img> }
                         
-                        <h4 >{props.data?.title}</h4>
+                        <h2>{props.data?.title}</h2>
                         <h4 className="font-weight-300">{props.data?.company}</h4>
                     </div>
 
@@ -25,12 +27,12 @@ function Story(props){
                 
                 
                 {
-                    props.data?.moreText &&
-                    <div className="more col-4 w-100">
-                        <div className="w-100">
-                            <button className="btn btn-primary border-white text-white border-pill font-weight-300">{props.data.moreText}</button>
-                        </div>
-                    </div>
+                    // props.data?.moreText &&
+                    // <div className="more col-4 w-100">
+                    //     <div className="w-100">
+                    //         <button className="btn btn-primary border-white text-white border-pill font-weight-300">{props.data.moreText}</button>
+                    //     </div>
+                    // </div>
                 }
 
             </div>

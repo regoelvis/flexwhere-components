@@ -1,3 +1,9 @@
+:root{
+  --color-flw-blue: #1382c5;
+  --real-flw-blue : #5082bf;
+  --color-launch-yellow: #e8c12b;
+}
+
 .App {
   text-align: center;
 }
@@ -24,13 +30,10 @@ a{
 /*
 * Colors 
 */
-:root{
-  --flw-blue : #5082bf;
-}
 
 .flw-blue{
-  color: #5082bf;
-  background-color: #5082bf;
+  color: var(--color-flw-blue);
+  background-color: var(--color-flw-blue);
 }
 
 .text-black{
@@ -305,13 +308,13 @@ a{
 }
 
 .pill{
-  padding: 0.5rem 1.75rem;
+  padding: 0.5rem 1rem;
   border-radius: 50rem ;
   border: none;
 }
 
 .btn-primary{
-  background-color: #5082bf;
+  background-color: var(--color-flw-blue);
 }
 
 *,*::after, *::before {

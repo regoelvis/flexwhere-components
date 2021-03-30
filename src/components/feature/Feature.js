@@ -7,11 +7,11 @@ export default function Feature(props){
     return(
         <div className={type+ " flw-feature text-left font-montserrat"}>
 
-            <div className="col col-12 col-s-7 col-xs-12 back-blur">
+            <div className="col col-12 col-s-7 col-xs-12 back-blur image">
                 <img className="img-fluid" src={props?.img} alt={props?.img} />
             </div>
 
-            <div className="d-flex flex-column col col-s-5 col-xs-12 px-1 pr-2 py-2 flex-justify-center ">
+            <div className="col col-s-5 col-xs-12 flex-justify-center description">
                 <div className="d-flex">
                     <h1 className="bold"> {props?.title} </h1>
                 </div>
@@ -19,7 +19,7 @@ export default function Feature(props){
                     <div className="row flex-alignitems-center">
                         {
                             props?.featureImg &&
-                            <div className="col-1 mx-1">
+                            <div className="col-1 mr-1">
                                 <img className="img-fluid" src={props?.featureImg} alt={props?.featureImg} />
                             </div>
                         }

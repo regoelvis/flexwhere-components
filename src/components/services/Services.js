@@ -49,7 +49,7 @@ export default function Services(){
               </div>
 
               <div className="more-blogs">
-                <button className="btn border-blue pill text-blue transparent">Next blog</button>
+                <button className="btn border-blue next-blog pill text-blue transparent">Next blog</button>
               </div>
             </div>
       </div>

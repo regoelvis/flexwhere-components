@@ -11,7 +11,7 @@ export const en = {
     navbar : {
         features: "Features",
         newsInsights: "News & Insights",
-        customerStories: "Customer Stories",
+        customerStories: "Customer stories",
         pricing: "Pricing",
         about: "About",
         support: "SUPPORT",
@@ -20,27 +20,37 @@ export const en = {
         launch: "Launch"
     },
     features: {
-        title:"Feature 1 with icon and 2 lines",
-        deskBooking: "Desk Booking",
+        feature1:"Feature 1, with icon and in 2 lines",
+        feature2:"Feature 2, with icon and in 2 lines",
+        feature3:"Feature 3, with icon and in 2 lines",
+        feature4:"Feature 4, with icon and in 2 lines",
+        deskBooking: "Desk booking",
+        meetingBooking: "Meeting room booking",
+        statistics: "Statistics",
+        covid19: "Covid-19",
         normalText: "Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text",
         readMore: "Read More"
     },
     story: {
-        description: "The use of FlexWhere provides us with extra square meters of workspace",
-        company: "P. Persoon, Gemeente Deventer",
+        description: "Connection with other software",
+        company: "Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text Normal body text",
         readMore : "Read More Customer Stories"
+    },
+    launch : {
+        launch: "Launch your own FlexWhere",
+        freeTrial: "Launch free trial!"
     },
     footer : {
         sitemap: "Sitemap",
         features: "Features",
         newsInsights: "News & Insights",
-        customerTools: "Customer Tools",
+        customerStories: "Customer stories",
         prices: "Prices",
         tools: "Tools",
-        aboutUs: "About Us",
+        aboutUs: "About us",
 
         contact: "Contact",
-        general: "General",
+        general: "General: +44 (0)20 38681867",
         officeFlw: "office@flexwhere.com",
         address: "Achter de muren Zandpoort 10 Deventer",
 
@@ -48,9 +58,10 @@ export const en = {
         contactNo: "+44 (0)20 38681867",
         supportFlw: "support@flexwhere.com",
         businessDays: "Business days 07:00-17:00",
+        supportFlwSite: "support.flexwhere.com",
 
-        privacyStatement: "Privacy Statement",
-        cookieStatement: "Cookie Statement",
+        privacyStatement: "Privacy statement",
+        cookieStatement: "Cookie statement",
         disclaimer: "Disclaimer",
         termsAndConditions: "Terms and Conditions",
         colofon: "Colofon"

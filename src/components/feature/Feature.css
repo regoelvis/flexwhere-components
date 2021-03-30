@@ -23,13 +23,26 @@
 .flw-feature{
     display: flex;
     flex-direction: column-reverse;
-    margin: 2rem 1rem;
+    margin: 2rem 0;
+}
+
+.flw-feature .description{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.25rem;
+    padding: 1rem 0;
 }
 
 @media(min-width: 578px){
     .flw-feature{
         flex-direction: row;
         margin: 2rem 1rem;
+    }
+
+    .flw-feature .description{
+        margin: 0 0;
+        padding-left: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
 }
 

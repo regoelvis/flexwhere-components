@@ -164,7 +164,7 @@ button.rounded{
 
     .feature li:hover{
         color: #fff;
-        background-color: var(--flw-blue);
+        background-color: var(--color-flw-blue);
         border-radius: 0.25rem;
     }
 
@@ -194,7 +194,7 @@ button.rounded{
 }
 
 .chevron.blue {
-    border-color: #1382c5;
+    border-color: var(--color-flw-blue);
 }
 
 .chevron.chevron-right{
