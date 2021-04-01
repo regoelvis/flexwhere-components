@@ -23,6 +23,11 @@ import covid from './assets/images/group-1751.svg'
 import statistics from './assets/images/group-1752.svg'
 import meeting from './assets/images/group-1753.svg'
 
+//service images
+import privacyIcon from './assets/images/ICON_eye.svg'
+import securityIcon from './assets/images/ICON_security.svg'
+import softwareIcon from './assets/images/ICON_software.svg'
+
 import img from './assets/images/Picture1.png'
 
 import './resources/translations'
@@ -82,6 +87,27 @@ const featureData = {
   ]
 }
 
+const serviceData = {
+  title : t('services.title'),
+  services : [
+    {
+      img : privacyIcon,
+      title : t("services.privacy"),
+      description : t('services.privacyDescription')
+    },
+    {
+      img : securityIcon,
+      title : t("services.security"),
+      description : t("services.securityDescription")
+    },
+    {
+      img : softwareIcon,
+      title : t("services.softwareOnly"),
+      description : t('services.softwareDescription')
+    }
+  ]
+}
+
   const [language, setLanguage] = useState('en');
   const changeLanguage = (lang) => {
     setLanguage(lang)
@@ -96,7 +122,7 @@ const featureData = {
    * background image is based on window width
    */
   return (
-    <div className="App" style={{backgroundImage: `url('${ window.innerWidth<578? backImgMobile : backImgDesktop}')` }}>
+    <div className="App" style={{backgroundImage: `url('${ window.innerWidth<578? backImgMobile : backImgDesktop}')`, backgroundSize: '100% auto' }}>
       
       <Helmet>
         <title>FlexWhere {language.toUpperCase()}</title>
@@ -105,7 +131,7 @@ const featureData = {
       <Navbar languageHandler={changeLanguage} />
       {features}
       <Story data={storyData} />
-      <Services />
+      <Services data={serviceData} />
       <Launch />
       <Footer />
     </div>

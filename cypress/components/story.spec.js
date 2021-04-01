@@ -9,7 +9,7 @@ import logo from '../../src/assets/images/Topdesk.png'
 describe('Unit Component test for the Story Component', () => {
 
   const data = {
-    img: man,
+    img: [man],
     logo: logo,
     title: "“The use of FlexWhere provides us with extra square meters of workspace”",
     company : "P. Persoon, Gemeente Deventer",
@@ -61,6 +61,8 @@ describe('Unit Component test for the Story Component', () => {
       mount( 
         <Story />
       );
+      cy.get('.story').should('not.exist');
+
     });
 
 })
