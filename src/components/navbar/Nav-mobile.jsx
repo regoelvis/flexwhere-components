@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 import './Navbar.css'
 
+import NewsInsights from '../newsInsignts/NewsInsights';
+import Home from '../../pages/home/Home';
+
 import flwLogo from '../../assets/images/FW logo.svg'
 import { useTranslation } from 'react-i18next';
 
@@ -84,7 +87,7 @@ export default function NavbarMobile(props){
                             <div className="d-flex flex-column flex-alignitems-start navbar-item bold">
 
                                 <ul className="navbar-item text-black">
-                                    <li className="navbar-item text-black feature">
+                                    <li className="navbar-item text-black feature" onClick={()=> props.pageHandler(<Home />)}>
                                         <span onClick={changeChevron}> {t('navbar.features')}
                                             <span className={`chevron ${featureChevron} blue`}></span> 
                                         </span>
@@ -99,7 +102,7 @@ export default function NavbarMobile(props){
                                             </div>
                                         }
                                     </li>
-                                    <li className="navbar-item text-black ">{t('navbar.newsInsights')}</li>
+                                    <li className="navbar-item text-black " onClick={()=> props.pageHandler(<NewsInsights />)}>{t('navbar.newsInsights')}</li>
                                     <li className="navbar-item text-black ">{t('navbar.customerStories')}</li>
                                     <li className="navbar-item text-black ">{t('navbar.pricing')}</li>
                                     <li className="navbar-item text-black ">{t('navbar.about')} </li>

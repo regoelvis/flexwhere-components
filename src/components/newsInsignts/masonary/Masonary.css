@@ -31,6 +31,10 @@
     color: white;
 }
 
+.blog .content span {
+    color: var(--color-flw-blue);
+}
+
 .blog .content .ebook{
     color: #76b7de;
 }
