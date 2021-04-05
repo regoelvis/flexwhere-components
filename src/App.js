@@ -9,6 +9,8 @@ import Services from './components/services/Services'
 import Launch from './components/launch/Launch'
 import Footer from './components/footer/Footer'
 
+import NewsInsights from './components/newsInsignts/NewsInsights'
+
 //features images
 import backImgMobile from './assets/images/mobile/Mask Group 37.png'
 import backImgDesktop from './assets/images/Mask.png'
@@ -129,9 +131,10 @@ const serviceData = {
       </Helmet>
 
       <Navbar languageHandler={changeLanguage} />
-      {features}
+      <NewsInsights />
+      {/* {features}
       <Story data={storyData} />
-      <Services data={serviceData} />
+      <Services data={serviceData} /> */}
       <Launch />
       <Footer />
     </div>

@@ -1,0 +1,11 @@
+.news-container{
+    display: block;
+    padding: 1.25rem 1.25rem;
+    column-count: 1;
+}
+
+@media(min-width: 578px){
+    .news-container{
+        column-count: 3;
+    }
+}

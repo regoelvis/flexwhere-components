@@ -1,0 +1,73 @@
+.blog{
+    display: inline-block;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 1rem;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 0.5rem;
+}
+
+.blog .content {
+    padding: 1.5rem 1.25rem;
+    text-align: left;
+}
+
+.blog .content h2 {
+    margin: 0;
+}
+
+.blog.ebook {
+    background-color: var(--color-flw-blue);
+    color: #fff
+}
+
+.blog-content{
+    border-bottom: 1px solid black;
+    font-weight: 300;
+}
+
+.blog.ebook .blog-content{
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.blog .content .ebook{
+    color: #76b7de;
+}
+
+.blog-content .read-more{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-content .read-more span {
+    padding-bottom: 1rem;
+}
+
+.read-more span
+{
+    color: var(--color-flw-blue);
+}
+
+.ebook .read-more span{
+    color: #fff;
+}
+
+.author-section{
+    display: flex;
+    text-align: right;
+}
+
+.author-section .date{
+    font-size: 12px;
+}
+
+.author-section .author {
+    font-weight: 500;
+}
+
+@media(min-width:578px){
+    .blog{
+        margin: 1rem 2rem;
+    }
+}
