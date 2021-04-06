@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Story.css';
 
 function Story(props){
@@ -40,6 +41,15 @@ function Story(props){
         );
     
         else return null;
+}
+
+Story.propTypes = {
+    data : PropTypes.shape({
+        img: PropTypes.string,
+        logo: PropTypes.string,
+        title: PropTypes.string,
+        company: PropTypes.string
+    })
 }
 
 export default Story;

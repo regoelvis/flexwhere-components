@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Service from './Service'
 import './Services.css'
 
@@ -34,3 +35,10 @@ export default function Services(props){
       }
       else return null;
 } 
+
+Services.PropTypes = {
+  data : PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    services: PropTypes.array.isRequired
+  })
+}

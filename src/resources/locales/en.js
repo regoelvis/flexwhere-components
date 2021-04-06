@@ -66,5 +66,12 @@ export const en = {
         termsAndConditions: "Terms and Conditions",
         colofon: "Colofon"
 
+    },
+    newsInsights: {
+        blog :"Blog This is the space where max 3 lines will fit , 2 lines are also allowed.",
+        lorem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ut erat nec commodo. Max 4 lines of text in this area and min 3 lines.  ",
+        date: "12 oktober 2020",
+        sjoerd: "Sjoerd",
+
     }
 }

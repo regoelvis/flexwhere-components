@@ -2,10 +2,9 @@ import { useState } from 'react';
 import {useTranslation} from 'react-i18next'
 
 import './App.css';
-import Navbar from './components/navbar/Nav-mobile'
+import Navbar from './components/navbar/Nav-container'
 import Launch from './components/launch/Launch'
 import Footer from './components/footer/Footer'
-
 
 //features images
 import backImgMobile from './assets/images/mobile/Mask Group 37.png'
@@ -14,6 +13,7 @@ import backImgDesktop from './assets/images/Mask.png'
 import './resources/translations'
 import {Helmet} from 'react-helmet';
 
+//pages
 import Home from './pages/home/Home';
 
 function App(){

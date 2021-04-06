@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Feature.css'
 
 export default function Feature(props){
@@ -45,4 +46,11 @@ export default function Feature(props){
             </div>
         );
     else return null;
+}
+
+Feature.propTypes = {
+    img : PropTypes.string,
+    title: PropTypes.string,
+    featureImg: PropTypes.string,
+    featureName: PropTypes.string
 }
