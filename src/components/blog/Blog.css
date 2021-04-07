@@ -74,4 +74,8 @@
     .blog{
         margin: 1rem 2rem;
     }
+
+    .blog-content p {
+        margin-bottom: 0.25rem;
+    }
 }

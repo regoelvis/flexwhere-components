@@ -1,14 +1,14 @@
 import React from 'react';
 import './NewsInsights.css';
 import {useTranslation} from 'react-i18next';
-import Filter from './filter/Filter';
-import Masonary from './masonary/Masonary';
+import Filter from '../../components/filter/Filter';
+import Blog from '../../components/blog/Blog';
 
 import image from '../../assets/images/Outlook.png'
 import img from '../../assets/images/mask-group-44.png';
 import sjoerd from '../../assets/images/sjoerd-blog.png';
 
-function NewsInsights(props){
+function NewsInsights(){
     const {t} = useTranslation();
 
     const blogData = [
@@ -22,24 +22,24 @@ function NewsInsights(props){
         },
         {
             img: "",
-            title: "Blog This is the space where max 3 lines will fit , 2 lines are also allowed.",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ut erat nec commodo. Max 4 lines of text in this area and min 3 lines.  "
+            title: t("newsInsights.blog"),
+            description: t('newsInsights.lorem')
         },
         {
             type:"ebook",
             img: "",
-            title: "E-book This is the space where max 3 lines will fit , 2 lines are also allowed.",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ut erat nec commodo. Max 4 lines of text in this area and min 3 lines.  "
+            title: t("newsInsights.ebook"),
+            description: t('newsInsights.lorem')
         },
         {
             img: "",
-            title: "News This is the space where max 3 lines will fit , 2 lines are also allowed.",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ut erat nec commodo. Max 4 lines of text in this area and min 3 lines.  "
+            title: t("newsInsights.news"),
+            description: t('newsInsights.lorem')
         },
         {
             img: img,
-            title: "News This is the space where max 3 lines will fit , 2 lines are also allowed.",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ut erat nec commodo. Max 4 lines of text in this area and min 3 lines.  "
+            title: t("newsInsights.news"),
+            description: t('newsInsights.lorem')
         }
     ]
     return (
@@ -47,7 +47,7 @@ function NewsInsights(props){
             <Filter categories={["News", "Blog", "E-books"]} />
 
             <div className="news-container">
-                {blogData.map(news => <Masonary data={news} /> )}
+                {blogData.map(news => <Blog data={news} /> )}
             </div>
 
         </div>

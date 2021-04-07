@@ -36,9 +36,9 @@ export default function Services(props){
       else return null;
 } 
 
-Services.PropTypes = {
-  data : PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    services: PropTypes.array.isRequired
+Services.propTypes = {
+    data : PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      services: PropTypes.array.isRequired
   })
 }
